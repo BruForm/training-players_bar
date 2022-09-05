@@ -1,22 +1,24 @@
+<div class="navbar">
+  <div class="socials">
+    <div class="facebook"></div>
+  </div>
 
-  <div class="navbar">
-    <div class="socials">FB</div>
+  <a routerLink="/home" class="nav-icon" aria-label="Visit homepage" aria-current="page">
+    <img src="../../../assets/png/logo.png" alt="Logo"/>
+  </a>
 
-    <a href="#" class="nav-icon" aria-label="Visit homepage" aria-current="page">
-      <img src="../../../assets/png/logo.png" alt="Logo"/>
-    </a>
-
-    <div class="nav-links">
-      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="navlinks-container">
-        <a href="#" aria-current="page">Bar</a>
-        <a href="#">Escape Game</a>
-        <a href="#">Arcade</a>
-      </div>
+  <div class="nav-links">
+    <button class="hamburger" [class.open]="_hamburgerOpen" (click)="isHamburgerOpen()" type="button"
+            aria-label="Toggle navigation" aria-expanded="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="navlinks-container" [class.open]="_hamburgerOpen">
+      <a routerLink="#" aria-current="page">Bar</a>
+      <a routerLink="">Escape Game</a>
+      <a routerLink="">Arcade</a>
     </div>
   </div>
+</div>
 
