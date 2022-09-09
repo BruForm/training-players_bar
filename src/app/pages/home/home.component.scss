@@ -20,6 +20,10 @@ $colorLight: #fafafa;
   background-image: url(../../../assets/png/background.png);
   background-size: contain;
 
+  .displayNone {
+    display: none;
+  }
+
   .card {
     position: relative;
     display: flex;
@@ -41,7 +45,67 @@ $colorLight: #fafafa;
       text-align: center;
       color: $colorTextSelected;
     }
+
+    .content {
+      position: absolute;
+      display: flex;
+      top: 70px;
+      width: 90%;
+      height: calc(95% - 70px);
+      color: $colorText;
+      padding: 5px 10px;
+
+      .left {
+        // flex-grow: 1;
+        // flex-shrink: 2;
+        width: 55%;
+      }
+
+      .right {
+        // flex-grow: 0;
+        // flex-shrink: 1;
+        width: 45%;
+        border: 2px solid $colorLight;
+        border-radius: 10px;
+        padding: 5px 10px;
+        text-align: center;
+
+        .h3 {
+          width: 100%;
+          font-size: .5em;
+        }
+
+        article {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding: 10px 0;
+
+          img {
+            width: 25%;
+          }
+
+          h4{
+            width: 75%;
+            align-self: center;
+            font-size: .5em;
+          }
+        }
+      }
+    }
+
+    ul{
+      list-style: none;
+      margin-bottom: 20px;
+      font-size: .5em;
+    }
+
+    p{
+      font-size: .5em;
+    }
   }
+
+
 
   .coordinates {
     margin: 30px 0;
