@@ -1,8 +1,9 @@
-<div class="container" id="bar">
+<div class="container">
+  <div class="empty" id="bar"></div>
   <div class="card">
-    <img class="picture" src="../../../assets/png/picture_bar.png" alt="" />
-    <div class="title">Bar</div>
-    <div class="content">
+    <img class="picture" src="../../../assets/png/picture_bar.png" />
+    <div class="title" (click)="displayBar()">Bar</div>
+    <div class="content" *ngIf="this._displayBar">
       <aside class="left">
         <ul>
           Snacking :
@@ -26,31 +27,42 @@
       <aside class="right">
         <h3>En ce moment</h3>
         <article>
-          <img src="https://cdn.shopify.com/s/files/1/0553/6641/8608/products/Verres-a-cocktail-tequila-sunrise_360x.png?v=1631024133" alt="">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0553/6641/8608/products/Verres-a-cocktail-tequila-sunrise_360x.png?v=1631024133"
+            alt=""
+          />
           <h4>Le Robusto</h4>
         </article>
         <article>
-          <img src="https://cdn.shopify.com/s/files/1/0553/6641/8608/products/Verres-a-cocktail-tequila-sunrise_360x.png?v=1631024133" alt="">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0553/6641/8608/products/Verres-a-cocktail-tequila-sunrise_360x.png?v=1631024133"
+            alt=""
+          />
           <h4>Le Choco Cookie</h4>
         </article>
         <article>
-          <img src="https://cdn.shopify.com/s/files/1/0553/6641/8608/products/Verres-a-cocktail-tequila-sunrise_360x.png?v=1631024133" alt="">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0553/6641/8608/products/Verres-a-cocktail-tequila-sunrise_360x.png?v=1631024133"
+            alt=""
+          />
           <h4>Ramune Ananas</h4>
         </article>
       </aside>
     </div>
   </div>
-
-  <div class="card" id="escape">
+  <div class="empty" id="escape"></div>
+  <div class="card">
     <img
       class="picture"
       src="../../../assets/png/picture_escape-game.png"
       alt=""
     />
     <div class="title">Escape Game</div>
+    <p>Réservation ici</p>
   </div>
 
-  <div class="card" id="arcade">
+  <div class="empty" id="arcade"></div>
+  <div class="card">
     <img class="picture" src="../../../assets/png/picture_arcade.png" alt="" />
     <div class="title">Arcade</div>
   </div>

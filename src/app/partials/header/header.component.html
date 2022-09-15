@@ -8,16 +8,16 @@
   </a>
 
   <div class="nav-links">
-    <button class="hamburger" [class.open]="_hamburgerOpen" (click)="isHamburgerOpen()" type="button"
+    <button class="hamburger" [class.open]="this._hamburgerOpen" (click)="isHamburgerOpen()" type="button"
             aria-label="Toggle navigation" aria-expanded="true">
       <span></span>
       <span></span>
       <span></span>
     </button>
-    <div class="navlinks-container" [class.open]="_hamburgerOpen">
-      <a routerLink="#bar" aria-current="page">Bar</a>
-      <a routerLink="#escape">Escape Game</a>
-      <a routerLink="#arcade">Arcade</a>
+    <div class="navlinks-container" [class.open]="this._hamburgerOpen">
+      <a href="#bar">Bar</a>
+      <a href="#escape">Escape Game</a>
+      <a href="#arcade">Arcade</a>
     </div>
   </div>
 </div>

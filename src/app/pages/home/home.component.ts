@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  _displayBar: boolean;
+
+  constructor() { 
+    this._displayBar = false;
+  }
 
   ngOnInit(): void {
+
+  }
+
+  /**
+   * displayBar
+   */
+  public displayBar(): void {
+    this._displayBar = !this._displayBar;
   }
 
 }

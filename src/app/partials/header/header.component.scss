@@ -17,12 +17,14 @@ $fontsizeNavLinks: 20px;
 $fontsizeSignBtn: 16px;
 
 .navbar {
-  position: relative;
+  // position: relative;
+  position: fixed;
+  z-index: 1;
   display: flex;
   padding: 2vh 5vw;
   background: $colorBG;
   width: 100vw;
-  height: 15vh;
+  height: 12vh;
 
   // Logo Facebook
   $fb-bg-color: #3b5998;
